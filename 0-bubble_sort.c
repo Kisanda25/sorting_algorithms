@@ -1,23 +1,23 @@
 #include "sort.h"
 
 /**
- * swap - Swaps two integers array.
- * @x: integer one
- * @y: integer two.
+ * swap_ints - Swap two integers in an array.
+ * @a: The first integer to swap.
+ * @b: The second integer to swap.
  */
-void swap(int *x, int *y)
+void swap_ints(int *a, int *b)
 {
 	int tmp;
 
-	tmp = *x;
-	*x = *y;
-	*y = tmp;
+	tmp = *a;
+	*a = *b;
+	*b = tmp;
 }
 
 /**
- * bubble_sort - Sorts array of integers in ascending order.
- * @array: Array of integers.
- * @size: Size of array.
+ * bubble_sort - Sort an array of integers in ascending order.
+ * @array: An array of integers to sort.
+ * @size: The size of the array.
  *
  * Description: Prints the array after each swap.
  */
