@@ -21,20 +21,23 @@ void swap(int *x, int *y)
  *
  * Description: Prints the array after each swap.
  */
-void bubble_sort(int *array, size_t size) {
-    int swapped_arr;
+void bubble_sort(int *array, size_t size)
+{
+	int swapped_arr;
 
-    if (array == NULL || size == 0)
-        return;
+	if (array == NULL || size == 0)
+	return;
 
-    do {
-        swapped_arr = 0;
-        for (size_t i = 1; i < size; ++i) {
-            if (array[i - 1] > array[i]) {
-                swap(&array[i - 1], &array[i]);
-                swapped_arr = 1;
-                print_array(array, size); // Print the array after each swap
-            }
-        }
-    } while (swapped_arr);
+	do {
+	swapped_arr = 0;
+	for (size_t i = 1; i < size; ++i)
+	{
+	if (array[i - 1] > array[i])
+	{
+	swap(&array[i - 1], &array[i]);
+	swapped_arr = 1;
+	print_array(array, size);
+	}
+	}
+	} while (swapped_arr);
 }
