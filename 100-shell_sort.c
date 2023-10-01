@@ -15,7 +15,7 @@ void swap(int *x, int *y)
 }
 
 /**
- * shell_sort - Sort an array 
+ * shell_sort - Sort an array
  * @array: An array of integers.
  * @size: The size of the array.
  *
